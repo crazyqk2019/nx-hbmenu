@@ -21,7 +21,7 @@ Result textInit(void) {
     setExit();
     if (R_FAILED(rc)) return rc;
     #else
-    s_textLang = 1;
+    s_textLang = 6;
     #endif
 
     return 0;

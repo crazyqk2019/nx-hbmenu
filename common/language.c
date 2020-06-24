@@ -144,7 +144,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_NL("Geen toepassingen gevonden"),
         STR_KO("애플리케이션을 찾을 수 없습니다"),
         STR_RU("приложение не найдено"),
-        STR_ZH_HANS("找不到可执行的自制程序"),
+        STR_ZH_HANS("找不到可运行的自制程序"),
         STR_ZH_HANT("未能找到可執行的自製程式"),
     },
 
@@ -206,9 +206,9 @@ const char* const g_strings[StrId_Max][17] =
             "названием switch и она содержит приложения."
         ),
         STR_ZH_HANS(
-            "内存卡找不到任何可执行的应用程序。\n"
+            "内存卡找不到任何可运行的自制程序。\n"
             "请在内存卡的根目录建立「switch」子目录，\n"
-            "并存放自制应用软件至该目录。"
+            "并存放自制应用程序至该目录。"
         ),
         STR_ZH_HANT(
             "記憶體找不到任何可執行的應用程式。\n"
@@ -226,6 +226,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_IT("L'ultima applicazione ha restituito un errore:"),
         STR_JP("直前に実行したアプリでエラーが発生しました:"),
         STR_KO("최근 애플리케이션에서 오류가 발생했습니다:"),
+        STR_ZH_HANS("程序运行时发生错误："),
         STR_ZH_HANT("程式執行時發生錯誤:"),
     },
 
@@ -235,6 +236,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_DE("Konnte die Anwendung nicht starten:"),
         STR_FR("Erreur au lancement de l'application"),
         STR_IT("Errore nell'avvio dell'applicazione:"),
+        STR_ZH_HANS("启动程序失败："),
     },
 
     [StrId_AppInfo_Author] =
@@ -265,7 +267,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_NL("Versie"),
         STR_KO("버전"),
         STR_RU("Версия"),
-        STR_ZH_HANS("版"),
+        STR_ZH_HANS("版本"),
         STR_ZH_HANT("版"),
     },
 
@@ -281,7 +283,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_NL("Lancering"),
         STR_KO("실행"),
         STR_RU("запуск"),
-        STR_ZH_HANS("发射"),
+        STR_ZH_HANS("启动"),
         STR_ZH_HANT("啟動"),
     },
 
@@ -313,7 +315,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_NL("Terug"),
         STR_KO("뒤로 가기"),
         STR_RU("возвращаться"),
-        STR_ZH_HANS("回去"),
+        STR_ZH_HANS("返回"),
         STR_ZH_HANT("回去"),
     },
 
@@ -326,6 +328,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_ES("Aceptar"),
         STR_JP("了解"),
         STR_KO("확인"),
+        STR_ZH_HANS("确定"),
         STR_ZH_HANT("確認"),
     },
 
@@ -338,6 +341,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_IT("Applica"),
         STR_JP("適用"),
         STR_KO("적용"),
+        STR_ZH_HANS("应用"),
         STR_ZH_HANT("应用"),
     },
 
@@ -346,6 +350,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_EN("Star"),
         STR_ES("Agregar a favoritos"),
         STR_IT("Aggiungi ai preferiti"),
+        STR_ZH_HANS("加入收藏夹"),
     },
 
     [StrId_Actions_Unstar] =
@@ -353,6 +358,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_EN("Unstar"),
         STR_ES("Borrar de favoritos"),
         STR_IT("Rimuovi dai preferiti"),
+        STR_ZH_HANS("移出收藏夹"),
     },
 
     [StrId_ThemeMenu] =
@@ -364,6 +370,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_IT("Tema Menu"),
         STR_JP("テーマメニュー"),
         STR_KO("테마 메뉴"),
+        STR_ZH_HANS("主题菜单"),
         STR_ZH_HANT("主题菜单"),
     },
 
@@ -376,6 +383,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_IT("Il tema non è stato applicato a causa di un errore."),
         STR_JP("エラーが発生したため、テーマを適用できませんでした。"),
         STR_KO("오류가 발생 했기 때문에 테마를 적용할 수 없습니다."),
+        STR_ZH_HANS("由于发生错误，无法应用主题。"),
         STR_ZH_HANT("由于发生错误, 无法应用主题。"),
     },
 
@@ -385,6 +393,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_FR("Thème par défaut"),
         STR_DE("Standard Theme"),
         STR_IT("Tema di default"),
+        STR_ZH_HANS("缺省主题"),
     },
 
     /*[StrId_Reboot] =
@@ -783,7 +792,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_NL("netwerk lader"),
         STR_KO("네트워크 로더"),
         STR_RU("Загрузчик"),
-        STR_ZH_HANS("网络执行模块"),
+        STR_ZH_HANS("从网络启动"),
         STR_ZH_HANT("網路執行模組"),
     },
 
@@ -799,7 +808,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_NL("De netwerk lader is niet beschikbaar."),
         STR_KO("현재 네트워크 로더는 사용이 불가합니다."),
         STR_RU("Загрузчик в настоящее время недоступен."),
-        STR_ZH_HANS("无法启动 nxlink 网络执行模块。"),
+        STR_ZH_HANS("网络启动当前不可用。"),
         STR_ZH_HANT("無法啓動 nxlink 網路執行模組。"),
     },
 
@@ -827,7 +836,7 @@ const char* const g_strings[StrId_Max][17] =
         STR_IT("Disconnesso, in attesa della connessione…"),
         STR_JP("オフラインです。ネットワーク接続を待っています…"),
         STR_KO("연결 끊김, 네트워크 기다리는 중…"),
-        STR_ZH_HANS("无法连接网络，等待网络连接…"),
+        STR_ZH_HANS("网络离线，等待网络连接…"),
         STR_ZH_HANT("當前離線，等待網路連線…"),
     },
 
