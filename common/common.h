@@ -10,7 +10,7 @@
 #include <dirent.h>
 #include <sys/stat.h>
 #include <unistd.h>
-#include <threads.h>
+#include "tinycthread.h"
 #ifndef __APPLE__
 #include <malloc.h>
 #endif
@@ -33,6 +33,7 @@ typedef void (*workerThreadFunc)(void *);
 #ifdef _WIN32
 #define DIRECTORY_SEPARATOR_CHAR '\\'
 static const char DIRECTORY_SEPARATOR[] = "\\";
+#define mkdir(A, B) mkdir(A)
 #else
 #define DIRECTORY_SEPARATOR_CHAR '/'
 static const char DIRECTORY_SEPARATOR[] = "/";

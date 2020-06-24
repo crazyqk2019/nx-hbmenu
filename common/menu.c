@@ -6,6 +6,30 @@
 #include "switch/runtime/nxlink.h"
 #endif
 
+#ifdef _WIN32
+static long gethostid(void)
+{
+   long result = 0;
+    char name[1024];
+    struct hostent *hent = NULL;
+    char **p = NULL;
+    struct in_addr in;
+    if (gethostname(name, 1024) == 0)
+    {
+    if ((hent = gethostbyname(name)) != NULL)
+    {
+            p = hent->h_addr_list;
+            if (p && *p)
+            {
+                (void) memcpy(&in.s_addr, *p, sizeof(in.s_addr));
+                result = (long)in.s_addr;
+            }
+        }
+    }
+   return result;
+}
+#endif
+
 double menuTimer;
 
 char rootPathBase[PATH_MAX];
